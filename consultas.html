@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Graphic Institute</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/only-numbers.js"></script>
+
+
+</head>
+
+<body>
+    
+    <div id="progreso"></div>
+
+    <header>
+        <div class="head-link-cont">
+            <figure>
+                <img src="img/logo-graphic-institute.svg" alt="logo corporativo de graphic institute">
+            </figure>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com"> <img src="img/facebook.png" alt="logo de facebook"> </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/?lang=es"> <img src="img/twitter.png" alt="logo de Twiter"> </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com"> <img src="img/youtube.png" alt="logo de Youtube"> </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>
+                Formación en diseño gráfico, publicidad <span>y nuevas tecnologías de la información</span>
+            </h1>
+        </div>
+    </header>
+
+    <nav class="nav-container">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="cursos.html">Cursos de diseño y publicidad</a>
+            </li>
+            <li>
+                <a href="donde-estamos.html">Dónde estamos</a>
+            </li>
+            <li>
+                <a href="consultas.html">Consultas</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="consultas-cont">
+            <div>
+                <h2>Consultas</h2>
+                <p>Si tienes cualquier duda sobre nuestros cursos puedes completar el siguiente formulario. Para otras
+                    consultas contacta con nosotros mediante el teléfono o correo electrónico que figura más abajo.</p>
+            </div>
+            <div>
+                <h4>Formulario de consulta sobre cursos</h4>
+                <p>(Los campos marcados con un <span>*</span> son obligatorios) </p>
+                <form action="enviar-formulario.js" method="POST" name="Consulta sobre cursos">
+
+                    <label for="user-name">Nombre: <span>*</span></label>
+                    <input type="text" name="nombre-usuario" id="user-name" placeholder="Tu nombre" autocomplete="off"
+                        required>
+
+                    <label for="user-mail">Correo electrónico: <span>*</span></label>
+                    <input type="email" name="mail-usuario" id="user-mail" placeholder="nombre@dominio.es"
+                        autocomplete="off" required>
+
+                    <label for="user-tel">Teléfono: <span>*</span></label>
+                    <input type="tel" class="numbers" name="tel-usuario" id="user-tel" placeholder="000 00 00 00"
+                        autocomplete="off" maxlength="9" pattern="\d*" required>
+
+                    <label for="select-course">Curso en el que estás interesado <span></span></label>
+                    <select name="select-course" id="select-course" required>
+                        <option value="">Elige curso:</option>
+                        <option value="1">Dibujo vectorial</option>
+                        <option value="2">Maquetación</option>
+                        <option value="3">Edición de vídeo</option>
+                        <option value="4">Edición de sonido</option>
+                        <option value="5">Gestión de color</option>
+                        <option value="6">Creatividad</option>
+                    </select>
+
+                    <label for="text-area">Comentarios:</label>
+                    <textarea name="" id="text-area" cols="30" rows="10"
+                        placeholder="Escribe aquí tus comentarios"></textarea>
+
+                    <div id="check-text">
+                        <input type="checkbox" id="protection" name="acepta-protección" value="checked" required>
+                        <label for="protection">Acepta las cláusulas de protección de datos <a href="#">Leer Nota
+                                Legal</a></label>
+                    </div>
+
+                    <input type="submit" value="Enviar Formulario">
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-cont">
+            <ul>
+                <li>
+                    <a href="#">Contacto</a><span> | </span>
+                </li>
+                <li>
+                    <a href="#">Imágenes del centro</a><span> | </span>
+                </li>
+                <li>
+                    <a href="#">Premios</a><span> | </span>
+                </li>
+                <li>
+                    <a href="#">Bolsa de empleo</a><span> | </span>
+                </li>
+                <li>
+                    <a href="#">Datos legales</a>
+                </li>
+            </ul>
+            <p>© Graphic Designer. Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
